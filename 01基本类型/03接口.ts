@@ -1,10 +1,3 @@
-/*
- * @Author: fucheng
- * @Date: 2021-10-22 19:02:29
- * @LastEditTime: 2021-10-22 19:14:06
- * @LastEditors: fucheng
- * @Description: interface
- */
 // function printLabel(labelledObj: { label: string }) {
 //   console.log(labelledObj.label);
 // }
@@ -52,4 +45,4 @@ interface Point {
 }
 
 let p1: Point = { x: 10, y: 20 };
-p1.x = 5; // error! Cannot assign to 'x' because it is a read-only property.
+// p1.x = 5; // error! Cannot assign to 'x' because it is a read-only property.

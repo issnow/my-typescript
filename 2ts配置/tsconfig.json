@@ -1,0 +1,54 @@
+{
+  //配置,终端执行tsc编译命令
+  // *用来指定那些ts文件需要被编译, *任意文件 **任意目录
+  // 包含
+  "include": [
+    "../02ts配置/src/**/*"
+  ],
+  // *除了这些文件,"exclude"默认情况下会排除node_modules，bower_components，jspm_packages和<outDir>目录。
+  // "exclude": [
+  //   "./src/hello/**/*"
+  // ],
+  // 编译器选项
+  "compilerOptions": {
+    // js版本,Valid values: "ES3", "ES5", "ES6", "ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020", "ES2021", "ESNext".
+    "target": "ES6",
+    // *模块化规范标准,Valid values: "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015", "ES2020", "ESNext", "None", "es2022", "node12", "nodenext".(1)
+    // 'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node16', 'nodenext'
+    // "module": "ES6",
+    // 指定的库,一般不用设置,代码提示,Valid values: "ES5", "ES6", "ES2015", "ES2015.Collection", "ES2015.Core", "ES2015.Generator", "ES2015.Iterable", "ES2015.Promise", "ES2015.Proxy", "ES2015.Reflect", "ES2015.Symbol.WellKnown", "ES2015.Symbol", "ES2016", "ES2016.Array.Include", "ES2017", "ES2017.Intl", "ES2017.Object", "ES2017.SharedMemory", "ES2017.String", "ES2017.TypedArrays", "ES2018", "ES2018.AsyncGenerator", "ES2018.AsyncIterable", "ES2018.Intl", "ES2018.Promise", "ES2018.Regexp", "ES2019", "ES2019.Array", "ES2019.Object"
+    // "lib": ["123"],
+    // 制定编译后文件目录
+    "outDir": "../02ts配置/dist",
+    // 将ts编译后的代码合并一个文件,模块化只能使用cmd或system,用来将全局作用域的代码合并,一般不用
+    // "outFile": "./dist/app.js",
+    // 删掉注释
+    "removeComments": true,
+    // 是否编译js
+    "allowJs": true,
+    // 是否检查js代码像ts一样是否符合代码规范
+    "checkJs": true,
+    // 不生成编译后的文件,检查语法用的
+    "noEmit": false,
+    // 当有错误的时候,不生成编译文件
+    "noEmitOnError": true,
+    // 给错误和消息设置样式，使用颜色和上下文。
+    "pretty":true,
+    //*以下都是代码检查
+    // 所有严格检查的总开关,设置为true,所有其他的严格检查都为true,反之亦然
+    // *启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict， --strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization。
+    "strict": true,
+    // 启用js严格模式,使用es导入导出,js将会自动进入严格模式
+    "alwaysStrict": true,
+    // 不允许隐式类型any,函数的参数
+    "noImplicitAny": true,
+    // 不允许不确定类型的this
+    "noImplicitThis": true,
+    // null值检查,严格检查
+    "strictNullChecks": true,
+    // "preserveConstEnums": true,
+    // "sourceMap": true
+    // *在监视模式下运行编译器。会监视输出文件，在它们改变时重新编译。
+    "watch": true
+  }
+}
