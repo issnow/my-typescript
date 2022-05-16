@@ -15,6 +15,7 @@ f = 'he'
 f = true
 
 let s:string
+
 // *类型断言 用来告诉解析器变量的实际类型,两种写法
 s = f as string
 s = <string> f
@@ -27,3 +28,4 @@ function sum(a:number,b:number):void {
 function fn():never{
   throw new Error('asdfa')
 }
+
